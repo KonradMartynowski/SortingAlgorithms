@@ -1,0 +1,80 @@
+﻿<Window x:Class="AlgorytmyIStrukturyDanych.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorytmyIStrukturyDanych"
+        mc:Ignorable="d"
+        Title="Algorytmy sortowania" Height="370" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Name="btnManual" Content="?" HorizontalAlignment="Left" Margin="21,30,0,0" VerticalAlignment="Top" Width="76" Click="btnManual_Click"/>
+        <Button Name="BtnCreateArray"  Content="Generuj tablicę " HorizontalAlignment="Left" Margin="21,169,0,0" VerticalAlignment="Top" Width="290" Click="BtnCreateArray_Click"/>
+        <Button Name="BtnHeapSort" Content="Heap sort" HorizontalAlignment="Left" Margin="21,253,0,0" VerticalAlignment="Top" Width="290" Click="BtnHeapSort_Click"/>
+        <Button Name="BtnBubleSort" Content="Bubble sort" HorizontalAlignment="Left" Margin="21,293,0,0" VerticalAlignment="Top" Width="290" Click="BtnBubleSort_Click"/>
+        <Button Name="BtnInput" Content="Wejscie.dat" HorizontalAlignment="Left" Margin="128,30,0,0" VerticalAlignment="Top" Width="76" Click="BtnInput_Click"/>
+        <Button Name="BtnOutput" Content="Wyjscie.dat" HorizontalAlignment="Left" Margin="235,30,0,0" VerticalAlignment="Top" Width="76" Click="BtnOutput_Click"/>
+        <Label Content="Wielkość tablicy -" HorizontalAlignment="Left" Margin="21,70,0,0" VerticalAlignment="Top" Width="154"/>
+        <ComboBox Name="CmbArraySize" SelectedIndex="0" HorizontalAlignment="Left" Margin="201,70,0,0" VerticalAlignment="Top" Width="110" Height="26">
+            <ComboBoxItem Content="100"></ComboBoxItem>
+            <ComboBoxItem Content="1000"></ComboBoxItem>
+            <ComboBoxItem Content="10000"></ComboBoxItem>
+            <ComboBoxItem Content="20000"></ComboBoxItem>
+            <ComboBoxItem Content="30000"></ComboBoxItem>
+            <ComboBoxItem Content="2^8"></ComboBoxItem>
+            <ComboBoxItem Content="2^9"></ComboBoxItem>
+            <ComboBoxItem Content="2^10"></ComboBoxItem>
+            <ComboBoxItem Content="2^11"></ComboBoxItem>
+            <ComboBoxItem Content="2^12"></ComboBoxItem>
+            <ComboBoxItem Content="2^13"></ComboBoxItem>
+            <ComboBoxItem Content="2^14"></ComboBoxItem>
+            <ComboBoxItem Content="2^15"></ComboBoxItem>
+            <ComboBoxItem Content="2^16"></ComboBoxItem>
+        </ComboBox>
+
+        <Label Content="Przedział liczb -" HorizontalAlignment="Left" Margin="21,120,0,0" VerticalAlignment="Top" Width="154"/>
+        <ComboBox Name="CmbElementSize" SelectedIndex="0" HorizontalAlignment="Left" Margin="201,120,0,0" VerticalAlignment="Top" Width="110" Height="26">
+            <ComboBoxItem Content="-100 - 100"></ComboBoxItem>
+            <ComboBoxItem Content="-1000 - 1000"></ComboBoxItem>
+            <ComboBoxItem Content="-2000 - 2000"></ComboBoxItem>
+            <ComboBoxItem Content="-3000 - 3000"></ComboBoxItem>
+        </ComboBox>
+
+        <Label Content="Pomiar dla heap sort:" HorizontalAlignment="Left" Margin="342,10,0,0" VerticalAlignment="Top" Width="127"/>
+        <Grid Background="LightGray" HorizontalAlignment="Left" Height="116" Margin="340,40,0,0" VerticalAlignment="Top" Width="430">
+            <ListView Name="HeapSortView">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="n" Width="100"
+                                        DisplayMemberBinding="{Binding n}"/>
+                        <GridViewColumn Header="T(n)" Width="auto"
+                                        DisplayMemberBinding="{Binding Tn}"/>
+                        <GridViewColumn Header="(n * log n)/ T(n)" Width="auto"
+                                        DisplayMemberBinding="{Binding OT}"/>
+                        <GridViewColumn Header="t[s]" Width="auto"
+                                        DisplayMemberBinding="{Binding t}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+        <Label Content="Pomiar dla bubble sort:" HorizontalAlignment="Left" Margin="342,164,0,0" VerticalAlignment="Top" Width="141"/>
+        <Grid Background="LightGray" HorizontalAlignment="Left" Height="116" Margin="342,195,0,0" VerticalAlignment="Top" Width="430">
+            <ListView Name="BubbleSortView">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="n" Width="100"
+                                        DisplayMemberBinding="{Binding n}"/>
+                        <GridViewColumn Header="T(n)" Width="auto"
+                                        DisplayMemberBinding="{Binding Tn}"/>
+                        <GridViewColumn Header="(n^2)/ T(n)" Width="auto"
+                                        DisplayMemberBinding="{Binding OT}"/>
+                        <GridViewColumn Header="t[s]" Width="auto"
+                                        DisplayMemberBinding="{Binding t}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <Label Name="lblLoading" Content="Trwa sortowanie..." Visibility="Hidden" HorizontalAlignment="Left" Margin="21,210,0,0" VerticalAlignment="Top" Width="290" Foreground="#FFFF0D0D"/>
+    </Grid>
+</Window>

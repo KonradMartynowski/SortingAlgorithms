@@ -1,0 +1,15 @@
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych.csprojResolveAssemblyReference.cache
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\App.g.cs
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych_MarkupCompile.cache
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\bin\Debug\AlgorytmyIStrukturyDanych.exe.config
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\bin\Debug\AlgorytmyIStrukturyDanych.exe
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\bin\Debug\AlgorytmyIStrukturyDanych.pdb
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\MainWindow.g.cs
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych_MarkupCompile.lref
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\MainWindow.baml
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych.g.resources
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych.Properties.Resources.resources
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych.csproj.GenerateResource.cache
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych.csproj.CoreCompileInputs.cache
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych.exe
+C:\Users\Konrad\Desktop\AlgorytmyIStrukturyDanych\AlgorytmyIStrukturyDanych\obj\Debug\AlgorytmyIStrukturyDanych.pdb
